@@ -1,0 +1,7 @@
+---
+- hosts: appserver
+  connection: local
+  become: yes
+  roles:
+    - common
+    - app

@@ -1,0 +1,7 @@
+---
+- hosts: webserver
+  connection: local
+  become: yes
+  roles:
+    - common
+    - web

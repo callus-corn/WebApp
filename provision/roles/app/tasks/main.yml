@@ -1,0 +1,4 @@
+---
+- include: python3.yml
+- include: pip3.yml
+- include: django.yml

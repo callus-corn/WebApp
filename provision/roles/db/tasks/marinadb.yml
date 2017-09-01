@@ -1,0 +1,15 @@
+---
+- name: install mariadb
+  yum:
+    name: mariadb
+    state: present
+
+- name: install mariadb-server
+  yum:
+    name: mariadb-server
+    state: present
+
+- name: install mariadb-devel
+  yum:
+    name: mariadb-devel
+    state: present

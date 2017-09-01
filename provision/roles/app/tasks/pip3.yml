@@ -1,0 +1,5 @@
+---
+- name: install pip3
+  shell: python3.6 -m ensurepip
+  register: result
+  changed_when: '"Requirement already satisfied: pip" not in result.stdout'
