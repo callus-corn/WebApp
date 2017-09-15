@@ -39,4 +39,16 @@ Vagrant.configure(VARGRANTFILE_API_VERSION) do |config|
 
   end
 
+  config.vm.define "front" do | front |
+    front.vm.hostname = "front"
+    front.vm.network "private_network", ip: "192.168.33.40", virtualbox__intent: "intent"
+
+    front.vm.provision :ansible_local do | ansible |
+      ansible.limit = "front"
+      ansible.playbook = "provision/site.yml"
+      ansible.inventory_path = "provision/development"
+    end
+
+  end
+
 end

@@ -1,0 +1,6 @@
+---
+- name: Install Angular2
+  npm: 
+    name: "@angular/cli"
+    global: yes
+    state: present

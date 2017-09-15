@@ -1,0 +1,15 @@
+---
+- name: Check npm
+  shell: npm -v
+  register: result
+  ignore_errors: yes
+  changed_when: result|failed
+
+- name: Install repo
+  shell: curl -sL https://rpm.nodesource.com/setup_6.x | sudo bash -
+  when: result|failed
+
+- name: Install nodejs
+  yum:
+    name: nodejs
+    state: present

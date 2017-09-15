@@ -6,3 +6,6 @@ app ansible_connection=local
 
 [dbserver]
 db ansible_connection=local
+
+[frontserver]
+front ansible_connection=local

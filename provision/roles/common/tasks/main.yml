@@ -1,3 +1,2 @@
 ---
 - include: git.yml
-- include: docker.yml

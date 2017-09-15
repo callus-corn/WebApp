@@ -3,3 +3,9 @@
   yum:
     name: git
     state: present
+
+- name: git add name
+  git_config: name=user.name scope=global value="collus-corn"
+
+- name: git add mail
+  git_config: name=user.email scope=global value="mtfm_ymzk@yahoo.co.jp"

@@ -1,0 +1,5 @@
+---
+- name: install uwsgi
+  pip:
+    name: uwsgi
+    executable: pip3

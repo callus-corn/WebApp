@@ -1,0 +1,4 @@
+- name: install Development Tools
+  yum:
+    name: "@Development Tools"
+    state: present

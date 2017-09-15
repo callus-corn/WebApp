@@ -1,4 +1,6 @@
 ---
+- include: development_tools.yml
 - include: python3.yml
 - include: pip3.yml
 - include: django.yml
+- include: uwsgi.yml
